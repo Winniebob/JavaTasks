@@ -2,15 +2,16 @@
 package Task9;
 
 import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Task9{
     public static void  main(String[] args){
-        ArrayDeque<Integer> numbers = new ArrayDeque<Integer>(3);
-        ArrayDeque<Integer> numbersSecond = new ArrayDeque<Integer>(3);
+        Deque<Integer> numbers = new ArrayDeque<Integer>(3);
+        Deque<Integer> numbersSecond = new ArrayDeque<Integer>(3);
         multiplictation(numbers);
         sumNumb(numbersSecond);
     }
-    public static void multiplictation(ArrayDeque<Integer> numbers){
+    public static void multiplictation(Deque<Integer> numbers){
         
         numbers.add(12);
         numbers.add(10);
@@ -20,7 +21,7 @@ public class Task9{
         numbers.add(multiplicationNumbers);
         System.out.print(numbers);
     }
-    public static void sumNumb (ArrayDeque<Integer> numbersSecond){
+    public static void sumNumb (Deque<Integer> numbersSecond){
         numbersSecond.add(-32);
         numbersSecond.add(15);
         int numberOne = numbersSecond.getFirst();
